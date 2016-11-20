@@ -1,0 +1,27 @@
+/*html5初始化*/
+article,aside,dialog,footer,header,section,footer,nav,figure,menu{
+    display:block
+}
+/*重置样式*/
+body,ul,ol,li,div,p,span,h1,h2,h3,h4,h5,h6,header,section,main,footer,i,dl,dt,dd,img,input,img{
+    margin: 0;
+    padding: 0;
+}
+img{
+    border: 0;
+}
+li{
+    list-style: none;
+}
+/*清除浮动*/
+.clearfloat:after{
+    display: block;
+    content: '';
+    clear: both;
+    visibility: hidden;
+}
+.clearfloat{
+    zoom: 1;
+}
+.fl{float: left;}
+.fr{float: right;}
