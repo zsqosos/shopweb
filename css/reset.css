@@ -10,6 +10,10 @@ body,ul,ol,li,div,p,span,h1,h2,h3,h4,h5,h6,header,section,main,footer,i,dl,dt,dd
 img{
     border: 0;
 }
+input,textarea,select{
+    outline: none;
+    border: none;
+}
 li{
     list-style: none;
 }

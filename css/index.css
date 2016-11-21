@@ -48,8 +48,8 @@ a{
     border: none;
     width: 360px;
     height: 35px;
+    line-height: 35px\9;
     padding: 0 5px;
-    outline: none;
 
 }
 .search-btn{
@@ -362,16 +362,14 @@ section .container{
 footer{
     margin-top: 40px;
     height: 223px;
+    padding-top: 46px;
     background: #D4D4D4;
     text-align: center;;
 }
-.webinfo{
-    padding-top: 46px;
+footer p{
+    line-height: 24px;
 }
-.webinfo p{
-    line-height: 26px;
-}
-.webinfo p a{
+footer p a{
     color: #000;
 }
 .otherweb{
@@ -379,11 +377,9 @@ footer{
 }
 .otherweb img{
     display: inline-block;
-    margin-right: 21px;
+    margin: 0 12px;
 }
-.otherweb img:last-child{
-    margin: 0;
-}
+
 
 
 
