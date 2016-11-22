@@ -3,12 +3,10 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <!--[if lt IE 9]>
-        <script src="http://cdn.static.runoob.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
-    <![endif]-->
+    <script src="http://cdn.static.runoob.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
     <title>慕课电商</title>
     <link rel="icon" href="favicon.ico"/>
-    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/public.css"/>
     <link rel="stylesheet" href="css/index.css"/>
 </head>
 <body>
@@ -54,29 +52,61 @@
         </div>
     </header>
     <!--头部及导航结束-->
-    <!--banner图及弹出菜单开始-->
-    <section class="clearfloat">
-        <div class="container">
+    <div class="container">
+        <!--banner图及菜单开始-->
+        <section class="clearfloat">
+            <!--商品主菜单开始-->
             <div class="shoplist">
-                <dl class="shoplist-items items_active">
+                <dl class="shoplist-items">
                     <dt><a href="#">手机</a> <a href="#">数码</a> <a class="alink" href="#">合约机</a></dt>
-                    <dd><a href="#">荣耀</a> <a href="#">单反</a> <a href="#">智能设备</a></dd>
+                    <dd><a href="#">VR设备</a> <a href="#">单反</a> <a href="#">智能设备</a></dd>
                 </dl>
                 <dl class="shoplist-items">
                     <dt><a href="#">电脑</a> <a href="#">硬件外设</a> <a class="alink" href="#">装机宝</a></dt>
-                    <dd><a href="#">笔记本</a> <a href="#">台式机</a> <a href="#">超极本</a><a href="#">平板</a></dd>
+                    <dd><a href="#">笔记本</a> <a href="#">台式机</a> <a href="#">超极本</a> <a href="#">平板</a></dd>
                 </dl>
                 <dl class="shoplist-items">
-                    <dt><a href="#">家电</a></dt>
-                    <dd><a href="#">电视</a> <a href="#">空调</a> <a href="#">冰箱</a><a href="#">洗衣机</a></dd>
+                    <dt><a href="#">家电</a> <a href="#">厨房电器</a> <a href="#">生活电器</a></dt>
+                    <dd><a href="#">电视</a> <a href="#">空调</a> <a href="#">冰箱</a> <a href="#">洗衣机</a></dd>
                 </dl>
                 <dl class="shoplist-items">
-                    <dt><a href="#">厨房电器</a> <a href="#">生活电器</a></dt>
-                    <dd><a href="#">空气净化器</a> <a href="#">微波炉</a> <a href="#">取暖设备</a></dd>
+                    <dt><a href="#">服装</a> <a href="#">配饰</a></dt>
+                    <dd><a href="#">男装</a> <a href="#">女装</a> <a href="#">童装</a></dd>
                 </dl>
                 <dl class="shoplist-items">
                     <dt><a href="#">食品/饮料</a> <a href="#">生鲜</a> <a class="alink" href="#">粮油</a></dt>
-                    <dd><a href="#">方便面</a> <a href="#">进口</a> <a href="#">零食</a><a href="#">保健</a></dd>
+                    <dd><a href="#">方便食品</a> <a href="#">进口</a> <a href="#">零食</a> <a href="#">酒水</a></dd>
+                </dl>
+            </div>
+            <!--商品主菜单结束-->
+            <!--商品弹出二级菜单开始-->
+            <div class="popshop">
+                <dl class="pop-items">
+                    <dt ><a href="#">手机通讯</a></dt>
+                    <dd ><a href="#">手机</a>&nbsp;<a href="#">对讲机</a></dd>
+                </dl>
+                <dl class="pop-items">
+                    <dt><a href="#">手机配件</a></dt>
+                    <dd><a href="#">手机壳</a>&nbsp;<a href="#">贴膜</a>&nbsp;<a href="#">手机存储卡</a>&nbsp;<a href="#">数据线</a>&nbsp;<a href="#">充电器</a><a href="#">手机耳机</a>&nbsp;<a href="#">创意配件</a>&nbsp;<a href="#">手机饰品</a>&nbsp;<a href="#">手机电池</a>&nbsp;<a href="#">苹果周边</a><a href="#">移动电源</a><a href="#">蓝牙耳机</a><a href="#">手机支架</a></dd>
+                </dl>
+                <dl class="pop-items">
+                    <dt><a href="#">摄影摄像</a></dt>
+                    <dd><a href="#">数码相机</a>&nbsp;<a href="#">单点/微单相机</a>&nbsp;<a href="#">拍立得</a>&nbsp;<a href="#">单反相机</a>&nbsp;<a href="#">运动相机</a><a href="#">摄像机</a>&nbsp;<a href="#">镜头</a>&nbsp;<a href="#">户外器材</a>&nbsp;<a href="#">影棚器材</a>&nbsp;<a href="#">数码相框</a></dd>
+                </dl>
+                <dl class="pop-items">
+                    <dt><a href="#">数码配件</a></dt>
+                    <dd><a href="#">存储卡</a>&nbsp;<a href="#">三脚架/云台</a>&nbsp;<a href="#">相机包</a>&nbsp;<a href="#">滤镜</a>&nbsp;<a href="#">闪光灯/手柄</a><a href="#">相机清洁/贴膜</a>&nbsp;<a href="#">机身附件</a>&nbsp;<a href="#">镜头附件</a>&nbsp;<a href="#">电池/充电器</a></dd>
+                </dl>
+                <dl class="pop-items">
+                    <dt><a href="#">影音娱乐</a></dt>
+                    <dd><a href="#">耳机/耳麦</a>&nbsp;<a href="#">音响/音箱</a>&nbsp;<a href="#">便携/无线音响</a>&nbsp;<a href="#">收音机</a>&nbsp;<a href="#">麦克风</a><a href="#">MP3/MP4</a>&nbsp;<a href="#">专业音频</a></dd>
+                </dl>
+                <dl class="pop-items">
+                    <dt><a href="#">智能设备</a></dt>
+                    <dd><a href="#">智能手环</a>&nbsp;<a href="#">智能手表</a>&nbsp;<a href="#">智能眼镜</a>&nbsp;<a href="#">智能机器人</a>&nbsp;<a href="#">智能家居</a><a href="#">MP3/MP4</a>&nbsp;<a href="#">无人机</a></dd>
+                </dl>
+                <dl class="pop-btn">
+                    <a href="#">电脑整机频道 <i></i></a><a href="#">硬件/外设频道 <i></i></a><a href="#">数码智能频道 <i></i></a>
                 </dl>
             </div>
             <div class="popshop">
@@ -85,42 +115,125 @@
                     <dd ><a href="#">笔记本</a>&nbsp;<a href="#">超极本</a>&nbsp;<a href="#">平板电脑</a>&nbsp;<a href="#">台式机</a>&nbsp;<a href="#">上网本</a></dd>
                 </dl>
                 <dl class="pop-items">
-                    <dt><a href="#">电脑整机</a></dt>
-                    <dd><a href="#">笔记本</a>&nbsp;<a href="#">超极本</a>&nbsp;<a href="#">平板电脑</a>&nbsp;<a href="#">台式机</a>&nbsp;<a href="#">上网本</a><a href="#">笔记本</a>&nbsp;<a href="#">超极本</a>&nbsp;<a href="#">平板电脑</a>&nbsp;<a href="#">台式机</a>&nbsp;<a href="#">上网本</a></dd>
+                    <dt><a href="#">电脑配件</a></dt>
+                    <dd><a href="#">CPU</a>&nbsp;<a href="#">硬盘</a>&nbsp;<a href="#">SSD固态硬盘</a>&nbsp;<a href="#">内存</a>&nbsp;<a href="#">显示器</a><a href="#">智能显示器</a>&nbsp;<a href="#">主板</a>&nbsp;<a href="#">显卡</a>&nbsp;<a href="#">机箱</a>&nbsp;<a href="#">电源</a>&nbsp;<a href="#">散热器</a>&nbsp;<a href="#">刻录机/光驱</a>&nbsp;<a href="#">声卡</a>&nbsp;<a href="#">扩展卡</a>&nbsp;<a href="#">服务器配件</a>&nbsp;<a href="#">DIY小附件</a>&nbsp;<a href="#">装机/配件安装</a></dd>
                 </dl>
                 <dl class="pop-items">
-                    <dt><a href="#">电脑整机</a></dt>
-                    <dd><a href="#">笔记本</a>&nbsp;<a href="#">超极本</a>&nbsp;<a href="#">平板电脑</a>&nbsp;<a href="#">台式机</a>&nbsp;<a href="#">上网本</a><a href="#">笔记本</a>&nbsp;<a href="#">超极本</a>&nbsp;<a href="#">平板电脑</a>&nbsp;<a href="#">台式机</a>&nbsp;<a href="#">上网本</a><a href="#">笔记本</a>&nbsp;<a href="#">超极本</a>&nbsp;<a href="#">平板电脑</a>&nbsp;<a href="#">台式机</a>&nbsp;<a href="#">上网本</a></dd>
+                    <dt><a href="#">整机附件</a></dt>
+                    <dd><a href="#">电脑包</a>&nbsp;<a href="#">电脑桌</a>&nbsp;<a href="#">电池</a>&nbsp;<a href="#">电源适配器</a>&nbsp;<a href="#">贴膜</a><a href="#">清洁用品</a>&nbsp;<a href="#">笔记本散热</a>&nbsp;<a href="#">USB扩展</a>&nbsp;<a href="#">平板配件</a>&nbsp;<a href="#">特色配件</a><a href="#">插座网线/电话线</a>&nbsp;<a href="#">影音线材</a>&nbsp;<a href="#">电脑线材</a></dd>
                 </dl>
                 <dl class="pop-items">
-                    <dt><a href="#">电脑整机</a></dt>
-                    <dd><a href="#">笔记本</a>&nbsp;<a href="#">超极本</a>&nbsp;<a href="#">平板电脑</a>&nbsp;<a href="#">台式机</a>&nbsp;<a href="#">上网本</a><a href="#">笔记本</a>&nbsp;<a href="#">超极本</a>&nbsp;<a href="#">平板电脑</a>&nbsp;<a href="#">台式机</a>&nbsp;<a href="#">上网本</a></dd>
+                    <dt><a href="#">电脑外设</a></dt>
+                    <dd><a href="#">鼠标</a>&nbsp;<a href="#">键盘</a>&nbsp;<a href="#">游戏外设</a>&nbsp;<a href="#">移动硬盘</a>&nbsp;<a href="#">摄像头</a><a href="#">高清播放器</a>&nbsp;<a href="#">外置盒</a>&nbsp;<a href="#">移动硬盘包</a>&nbsp;<a href="#">手写板/绘画板</a></dd>
                 </dl>
                 <dl class="pop-items">
-                    <dt><a href="#">电脑整机</a></dt>
-                    <dd><a href="#">笔记本</a>&nbsp;<a href="#">超极本</a>&nbsp;<a href="#">平板电脑</a>&nbsp;<a href="#">台式机</a>&nbsp;<a href="#">上网本</a><a href="#">笔记本</a>&nbsp;<a href="#">超极本</a>&nbsp;<a href="#">平板电脑</a>&nbsp;<a href="#">台式机</a></dd>
+                    <dt><a href="#">音频外设</a></dt>
+                    <dd><a href="#">音响</a>&nbsp;<a href="#">耳机/耳麦</a>&nbsp;<a href="#">麦克风</a>&nbsp;<a href="#">声卡</a>&nbsp;<a href="#">音频附件</a><a href="#">录音笔</a></dd>
                 </dl>
                 <dl class="pop-btn">
                     <a href="#">电脑整机频道 <i></i></a><a href="#">硬件/外设频道 <i></i></a>
                 </dl>
             </div>
+            <div class="popshop">
+                <dl class="pop-items">
+                    <dt ><a href="#">电视</a></dt>
+                    <dd ><a href="#">合资品牌</a>&nbsp;<a href="#">国产品牌</a>&nbsp;<a href="#">互联网品牌</a></dd>
+                </dl>
+                <dl class="pop-items">
+                    <dt><a href="#">空调</a></dt>
+                    <dd><a href="#">壁挂式空调</a>&nbsp;<a href="#">柜式空调</a>&nbsp;<a href="#">中央空调</a>&nbsp;<a href="#">空调配件</a></dd>
+                </dl>
+                <dl class="pop-items">
+                    <dt><a href="#">洗衣机</a></dt>
+                    <dd><a href="#">滚筒洗衣机</a>&nbsp;<a href="#">洗烘一体机</a>&nbsp;<a href="#">波轮洗衣机</a>&nbsp;<a href="#">迷你洗衣机</a>&nbsp;<a href="#">洗衣机配件</a></dd>
+                </dl>
+                <dl class="pop-items">
+                    <dt><a href="#">冰箱</a></dt>
+                    <dd><a href="#">多门</a>&nbsp;<a href="#">对开门</a>&nbsp;<a href="#">三门</a>&nbsp;<a href="#">双门</a>&nbsp;<a href="#">冷柜/冰吧</a><a href="#">酒柜</a>&nbsp;<a href="#">冰箱配件</a></dd>
+                </dl>
+                <dl class="pop-items">
+                    <dt><a href="#">厨卫大电器</a></dt>
+                    <dd><a href="#">油烟机</a>&nbsp;<a href="#">燃气灶</a>&nbsp;<a href="#">烟灶套装</a>&nbsp;<a href="#">消毒柜</a>&nbsp;<a href="#">洗碗机</a><a href="#">电热水器</a>&nbsp;<a href="#">燃气热水器</a>&nbsp;<a href="#">嵌入式厨电</a></dd>
+                </dl>
+                <dl class="pop-items">
+                    <dt><a href="#">厨卫小电器</a></dt>
+                    <dd><a href="#">电饭煲</a>&nbsp;<a href="#">微波炉</a>&nbsp;<a href="#">电烤箱</a>&nbsp;<a href="#">电磁炉</a>&nbsp;<a href="#">电压力锅</a><a href="#">豆浆机</a>&nbsp;<a href="#">咖啡机</a>&nbsp;<a href="#">面包机</a>&nbsp;<a href="#">榨汁机</a>&nbsp;<a href="#">酸奶机</a>&nbsp;<a href="#">电水壶</a>&nbsp;<a href="#">热水壶</a>&nbsp;<a href="#">电烧烤炉</a>&nbsp;<a href="#">多用途锅</a></dd>
+                </dl>
+                <dl class="pop-btn">
+                    <a href="#">家电城<i></i></a><a href="#">智能生活馆 <i></i></a>
+                </dl>
+            </div>
+            <div class="popshop">
+                <dl class="pop-items">
+                    <dt ><a href="#">男装</a></dt>
+                    <dd ><a href="#">衬衫</a>&nbsp;<a href="#">T恤</a>&nbsp;<a href="#">牛仔裤</a>&nbsp;<a href="#">休闲裤</a>&nbsp;<a href="#">卫衣</a>&nbsp;<a href="#">针织衫</a>&nbsp;<a href="#">西服</a>&nbsp;<a href="#">西裤</a>&nbsp;<a href="#">POLO衫</a>&nbsp;<a href="#">羽绒服</a>&nbsp;<a href="#">西装套装</a>&nbsp;<a href="#">皮衣</a>&nbsp;<a href="#">夹克</a>&nbsp;<a href="#">风衣</a>&nbsp;<a href="#">卫裤/运动裤</a>&nbsp;<a href="#">短裤</a>&nbsp;<a href="#">棉服</a>&nbsp;<a href="#">马甲</a>&nbsp;<a href="#">羊毛衫</a>&nbsp;<a href="#">毛呢大衣</a></dd>
+                </dl>
+                <dl class="pop-items">
+                    <dt><a href="#">女装</a></dt>
+                    <dd><a href="#">连衣裙</a>&nbsp;<a href="#">T恤</a>&nbsp;<a href="#">雪纺衫</a>&nbsp;<a href="#">衬衫</a>&nbsp;<a href="#">休闲裤</a><a href="#">牛仔裤</a>&nbsp;<a href="#">针织衫</a>&nbsp;<a href="#">短外套</a>&nbsp;<a href="#">卫衣</a>&nbsp;<a href="#">小西装</a>&nbsp;<a href="#">半身裙</a>&nbsp;<a href="#">短袖</a>&nbsp;<a href="#">吊带/背心</a>&nbsp;<a href="#">打底衫</a>&nbsp;<a href="#">马甲</a>&nbsp;<a href="#">中老年女装</a>&nbsp;<a href="#">皮草</a></dd>
+                </dl>
+                <dl class="pop-items">
+                    <dt><a href="#">内衣</a></dt>
+                    <dd><a href="#">文胸</a>&nbsp;<a href="#">睡衣/家居服</a>&nbsp;<a href="#">男士内裤</a>&nbsp;<a href="#">女士内裤</a>&nbsp;<a href="#">文胸套装</a><a href="#">吊带/背心</a>&nbsp;<a href="#">少女文胸</a>&nbsp;<a href="#">美腿袜</a>&nbsp;<a href="#">打底裤/袜</a>&nbsp;<a href="#">抹胸</a></dd>
+                </dl>
+                <dl class="pop-items">
+                    <dt><a href="#">配饰</a></dt>
+                    <dd><a href="#">太阳镜</a>&nbsp;<a href="#">光学镜架/镜片</a>&nbsp;<a href="#">男士腰带</a>&nbsp;<a href="#">防辐射眼镜</a>&nbsp;<a href="#">老花镜</a><a href="#">女士丝巾/围巾/披肩</a>&nbsp;<a href="#">男士围巾</a>&nbsp;<a href="#">棒球帽</a>&nbsp;<a href="#">遮阳帽/鸭舌帽</a>&nbsp;<a href="#">遮阳伞/雨伞</a>&nbsp;<a href="#">女士腰带</a>&nbsp;<a href="#">口罩</a>&nbsp;<a href="#">假领</a>&nbsp;<a href="#">耳罩</a>&nbsp;<a href="#">眼罩</a>&nbsp;<a href="#">真皮手套</a>&nbsp;<a href="#">防晒手套</a>&nbsp;<a href="#">钥匙扣</a></dd>
+                </dl>
+                <dl class="pop-items">
+                    <dt><a href="#">童装</a></dt>
+                    <dd><a href="#">套装</a>&nbsp;<a href="#">上衣</a>&nbsp;<a href="#">裤子</a>&nbsp;<a href="#">内衣</a>&nbsp;<a href="#">亲自装</a><a href="#">羽绒服/棉服</a>&nbsp;<a href="#">运动服</a>&nbsp;<a href="#">运动鞋</a></dd>
+                </dl>
+                <dl class="pop-btn">
+                    <a href="#">男装 <i></i></a><a href="#">女装 <i></i></a><a href="#">童装 <i></i></a><a href="#">内衣 <i></i></a>
+                </dl>
+            </div>
+            <div class="popshop">
+                <dl class="pop-items">
+                    <dt ><a href="#">新鲜水果</a></dt>
+                    <dd ><a href="#">进口水果</a>&nbsp;<a href="#">进口水果</a>&nbsp;<a href="#">国产水果</a>&nbsp;<a href="#">苹果</a>&nbsp;<a href="#">奇异果</a>&nbsp;<a href="#">橙子</a>&nbsp;<a href="#">牛油果</a>&nbsp;<a href="#">火龙果</a>&nbsp;<a href="#">榴莲</a>&nbsp;<a href="#">柠檬</a>&nbsp;<a href="#">椰青</a>&nbsp;<a href="#">芒果</a>&nbsp;<a href="#">时令水果</a></dd>
+                </dl>
+                <dl class="pop-items">
+                    <dt><a href="#">海鲜水产</a></dt>
+                    <dd><a href="#">虾类</a>&nbsp;<a href="#">鱼类</a>&nbsp;<a href="#">蟹类</a>&nbsp;<a href="#">贝类</a>&nbsp;<a href="#">海鲜</a><a href="#">海产干货</a>&nbsp;<a href="#">三文鱼</a>&nbsp;<a href="#">北极甜虾</a>&nbsp;<a href="#">扇贝</a>&nbsp;<a href="#">黄花鱼</a>&nbsp;<a href="#">大闸蟹</a>&nbsp;<a href="#">鲜活水产</a></dd>
+                </dl>
+                <dl class="pop-items">
+                    <dt><a href="#">肉禽蛋类</a></dt>
+                    <dd><a href="#">牛肉</a>&nbsp;<a href="#">猪肉</a>&nbsp;<a href="#">羊肉</a>&nbsp;<a href="#">鸡肉</a>&nbsp;<a href="#">牛排</a><a href="#">牛腩</a>&nbsp;<a href="#">牛腱</a>&nbsp;<a href="#">肋排</a>&nbsp;<a href="#">鸡翅</a>&nbsp;<a href="#">冷鲜肉</a><a href="#">咸鸭蛋</a>&nbsp;<a href="#">鸡蛋</a></dd>
+                </dl>
+                <dl class="pop-items">
+                    <dt><a href="#">新鲜蔬菜</a></dt>
+                    <dd><a href="#">根茎类</a>&nbsp;<a href="#">茄果瓜类</a>&nbsp;<a href="#">叶菜类</a>&nbsp;<a href="#">葱姜蒜辣</a>&nbsp;<a href="#">半加工蔬菜</a><a href="#">菌菇</a>&nbsp;<a href="#">西红柿</a>&nbsp;<a href="#">玉米</a>&nbsp;<a href="#">山药</a></dd>
+                </dl>
+                <dl class="pop-items">
+                    <dt><a href="#">冷冻速食</a></dt>
+                    <dd><a href="#">水饺</a>&nbsp;<a href="#">面点</a>&nbsp;<a href="#">速冻半成品</a>&nbsp;<a href="#">火锅丸串</a>&nbsp;<a href="#">汤圆</a><a href="#">冰淇淋</a>&nbsp;<a href="#">低温奶</a></dd>
+                </dl>
+                <dl class="pop-items">
+                    <dt><a href="#">粮油调味</a></dt>
+                    <dd><a href="#">米面杂粮</a>&nbsp;<a href="#">食用油</a>&nbsp;<a href="#">调味品</a>&nbsp;<a href="#">南北干货</a>&nbsp;<a href="#">方便食品</a>&nbsp;<a href="#">有机食品</a></dd>
+                </dl>
+                <dl class="pop-btn">
+                    <a href="#">生鲜 <i></i></a><a href="#">粮油 <i></i></a><a href="#">零食/饮料 <i></i></a><a href="#">酒类 <i></i></a>
+                </dl>
+            </div>
+            <!--商品弹出二级菜单结束-->
             <div class="banner">
                 <div class="imgbox">
                     <ul>
-                        <li><a href="#"><img src="images/banner_01.jpg" alt="广告图"/></a></li>
-                        <li><a href="#"><img src="images/banner_02.jpg" alt="广告图"/></a></li>
+                        <li><a href="#"><img src="images/banner/banner_01.jpg" alt="广告图"/></a></li>
+                        <li><a href="#"><img src="images/banner/banner_02.jpg" alt="广告图"/></a></li>
                     </ul>
                     <div class="imgnum">
                         <a href="#"></a><a href="#"></a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!--banner图及弹出菜单结束-->
-    <!--详细商品展示开始-->
-    <section class="clearfloat">
-        <div class="container">
+
+        </section>
+        <!--banner图及菜单结束-->
+        <!--详细商品展示开始-->
+        <section class="clearfloat">
             <div class="shopclass-box clearfloat">
                 <div class="shopclass fl"><span>家用电脑</span></div>
                 <a class="fr" href="#">更多&gt;&gt;</a>
@@ -130,9 +243,9 @@
                 <div class="banner-sm fl">
                     <div class="imgbox-sm">
                         <ul>
-                            <li><a href="#"><img src="images/banner_sm_01.jpg" alt="banner"/></a></li>
-                            <li><a href="#"><img src="images/banner_sm_02.jpg" alt="banner"/></a></li>
-                            <li><a href="#"><img src="images/banner_sm_02.jpg" alt="banner"/></a></li>
+                            <li><a href="#"><img src="images/banner/banner_sm_01.jpg" alt="banner"/></a></li>
+                            <li><a href="#"><img src="images/banner/banner_sm_02.jpg" alt="banner"/></a></li>
+                            <li><a href="#"><img src="images/banner/banner_sm_02.jpg" alt="banner"/></a></li>
                         </ul>
                         <div class="imgnum">
                             <a href="#"></a><a href="#"></a><a href="#"></a>
@@ -145,22 +258,22 @@
                 <div class="shopshow fr">
                     <div class="shopshow-top clearfloat">
                         <div class="shopshow-top-items">
-                            <div class="shopimg"><a href="#"><img src="images/shopshow_01.jpg" alt="htc8系列"/></a></div>
+                            <div class="shopimg"><a href="#"><img src="images/index/shopshow_01.jpg" alt="htc8系列"/></a></div>
                             <h3>HTC新渴望8系列</h3>
                             <p>2888元</p>
                         </div>
                         <div class="shopshow-top-items">
-                            <div class="shopimg"><a href="#"><img src="images/shopshow_01.jpg" alt="htc8系列"/></a></div>
+                            <div class="shopimg"><a href="#"><img src="images/index/shopshow_01.jpg" alt="htc8系列"/></a></div>
                             <h3>HTC新渴望8系列</h3>
                             <p>2888元</p>
                         </div>
                         <div class="shopshow-top-items">
-                            <div class="shopimg"><a href="#"><img src="images/shopshow_01.jpg" alt="htc8系列"/></a></div>
+                            <div class="shopimg"><a href="#"><img src="images/index/shopshow_01.jpg" alt="htc8系列"/></a></div>
                             <h3>HTC新渴望8系列</h3>
                             <p>2888元</p>
                         </div>
                         <div class="shopshow-top-items">
-                            <div class="shopimg"><a href="#"><img src="images/shopshow_01.jpg" alt="htc8系列"/></a></div>
+                            <div class="shopimg"><a href="#"><img src="images/index/shopshow_01.jpg" alt="htc8系列"/></a></div>
                             <h3>HTC新渴望8系列</h3>
                             <p>2888元</p>
                         </div>
@@ -169,7 +282,7 @@
                         <div class="shopshow-bottom-items fl">
                             <div class="imgbox-bottom fl">
                                 <div class="middle">
-                                    <a href="#"><img src="images/shopshow_02.jpg" alt="投影仪"/></a>
+                                    <a href="#"><img src="images/index/shopshow_02.jpg" alt="投影仪"/></a>
                                 </div>
                             </div>
                             <div class="shop-text fl">
@@ -180,7 +293,7 @@
                         <div class="shopshow-bottom-items fl">
                             <div class="imgbox-bottom fl">
                                 <div class="middle">
-                                    <a href="#"><img src="images/shopshow_03.jpg" alt="投影仪"/></a>
+                                    <a href="#"><img src="images/index/shopshow_03.jpg" alt="投影仪"/></a>
                                 </div>
                             </div>
                             <div class="shop-text fl">
@@ -191,7 +304,7 @@
                         <div class="shopshow-bottom-items fl">
                             <div class="imgbox-bottom fl">
                                 <div class="middle">
-                                    <a href="#"><img src="images/shopshow_04.jpg" alt="投影仪"/></a>
+                                    <a href="#"><img src="images/index/shopshow_04.jpg" alt="投影仪"/></a>
                                 </div>
                             </div>
                             <div class="shop-text fl">
@@ -202,7 +315,7 @@
                         <div class="shopshow-bottom-items fl">
                             <div class="imgbox-bottom fl">
                                 <div class="middle">
-                                    <a href="#"><img src="images/shopshow_05.jpg" alt="投影仪"/></a>
+                                    <a href="#"><img src="images/index/shopshow_05.jpg" alt="投影仪"/></a>
                                 </div>
                             </div>
                             <div class="shop-text fl">
@@ -214,12 +327,10 @@
                 </div>
             </div>
             <!--右侧商品列表结束-->
-        </div>
-    </section>
-    <!--详细商品展示结束-->
-    <!--详细商品展示开始-->
-    <section class="clearfloat">
-        <div class="container">
+        </section>
+        <!--详细商品展示结束-->
+        <!--详细商品展示开始-->
+        <section class="clearfloat">
             <div class="shopclass-box clearfloat">
                 <div class="shopclass fl"><span>食品酒水</span></div>
                 <a class="fr" href="#">更多&gt;&gt;</a>
@@ -229,9 +340,9 @@
                 <div class="banner-sm fl">
                     <div class="imgbox-sm">
                         <ul>
-                            <li><a href="#"><img src="images/banner_sm_02.jpg" alt="banner"/></a></li>
-                            <li><a href="#"><img src="images/banner_sm_01.jpg" alt="banner"/></a></li>
-                            <li><a href="#"><img src="images/banner_sm_02.jpg" alt="banner"/></a></li>
+                            <li><a href="#"><img src="images/banner/banner_sm_02.jpg" alt="banner"/></a></li>
+                            <li><a href="#"><img src="images/banner/banner_sm_01.jpg" alt="banner"/></a></li>
+                            <li><a href="#"><img src="images/banner/banner_sm_02.jpg" alt="banner"/></a></li>
                         </ul>
                         <div class="imgnum">
                             <a href="#"></a><a href="#"></a><a href="#"></a>
@@ -244,22 +355,22 @@
                 <div class="shopshow fr">
                     <div class="shopshow-top clearfloat">
                         <div class="shopshow-top-items">
-                            <div class="shopimg"><a href="#"><img src="images/shopshow_06.jpg" alt="htc8系列"/></a></div>
+                            <div class="shopimg"><a href="#"><img src="images/index/shopshow_06.jpg" alt="htc8系列"/></a></div>
                             <h3>三月美食狂享购</h3>
                             <p>50元</p>
                         </div>
                         <div class="shopshow-top-items">
-                            <div class="shopimg"><a href="#"><img src="images/shopshow_06.jpg" alt="htc8系列"/></a></div>
+                            <div class="shopimg"><a href="#"><img src="images/index/shopshow_06.jpg" alt="htc8系列"/></a></div>
                             <h3>三月美食狂享购</h3>
                             <p>50元</p>
                         </div>
                         <div class="shopshow-top-items">
-                            <div class="shopimg"><a href="#"><img src="images/shopshow_06.jpg" alt="htc8系列"/></a></div>
+                            <div class="shopimg"><a href="#"><img src="images/index/shopshow_06.jpg" alt="htc8系列"/></a></div>
                             <h3>三月美食狂享购</h3>
                             <p>50元</p>
                         </div>
                         <div class="shopshow-top-items">
-                            <div class="shopimg"><a href="#"><img src="images/shopshow_06.jpg" alt="htc8系列"/></a></div>
+                            <div class="shopimg"><a href="#"><img src="images/index/shopshow_06.jpg" alt="htc8系列"/></a></div>
                             <h3>三月美食狂享购</h3>
                             <p>50元</p>
                         </div>
@@ -268,7 +379,7 @@
                         <div class="shopshow-bottom-items fl">
                             <div class="imgbox-bottom fl">
                                 <div class="middle">
-                                    <a href="#"><img src="images/shopshow_07.jpg" alt="投影仪"/></a>
+                                    <a href="#"><img src="images/index/shopshow_07.jpg" alt="投影仪"/></a>
                                 </div>
                             </div>
                             <div class="shop-text fl">
@@ -279,7 +390,7 @@
                         <div class="shopshow-bottom-items fl">
                             <div class="imgbox-bottom fl">
                                 <div class="middle">
-                                    <a href="#"><img src="images/shopshow_07.jpg" alt="投影仪"/></a>
+                                    <a href="#"><img src="images/index/shopshow_07.jpg" alt="投影仪"/></a>
                                 </div>
                             </div>
                             <div class="shop-text fl">
@@ -290,7 +401,7 @@
                         <div class="shopshow-bottom-items fl">
                             <div class="imgbox-bottom fl">
                                 <div class="middle">
-                                    <a href="#"><img src="images/shopshow_07.jpg" alt="投影仪"/></a>
+                                    <a href="#"><img src="images/index/shopshow_07.jpg" alt="投影仪"/></a>
                                 </div>
                             </div>
                             <div class="shop-text fl">
@@ -301,7 +412,7 @@
                         <div class="shopshow-bottom-items fl">
                             <div class="imgbox-bottom fl">
                                 <div class="middle">
-                                    <a href="#"><img src="images/shopshow_07.jpg" alt="投影仪"/></a>
+                                    <a href="#"><img src="images/index/shopshow_07.jpg" alt="投影仪"/></a>
                                 </div>
                             </div>
                             <div class="shop-text fl">
@@ -313,13 +424,15 @@
                 </div>
             </div>
             <!--右侧商品列表结束-->
-        </div>
-    </section>
-    <!--详细商品展示结束-->
+        </section>
+        <!--详细商品展示结束-->
+    </div>
     <footer>
             <p><a href="#">慕课简介</a> | <a href="#">慕课公告</a> | <a href="#">招贤纳士</a> | <a href="#">联系我们</a> | <span>客服电话：400-675-1234</span></p>
             <p>Copyright&copy;2006 - 2014 慕课版权所有&nbsp;京ICP备09037834号&nbsp;京ICP证B1034-8373号&nbsp;公安局XX分局备案编号：123456789123</p>
         <div class="otherweb"><img src="images/otherweb.jpg" alt="可信任网站"/><img src="images/otherweb.jpg" alt="可信任网站"/><img src="images/otherweb.jpg" alt="可信任网站"/><img src="images/otherweb.jpg" alt="可信任网站"/></div>
     </footer>
+    <script src="lib/jquery-1.11.0.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
