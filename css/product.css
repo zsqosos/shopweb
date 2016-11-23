@@ -1,0 +1,119 @@
+header{
+    margin-bottom: 17px;
+}
+/*左侧栏*/
+.left{
+    width: 183px;
+    border: 1px solid #D7D7D7;
+    color: #555;
+}
+.left h3{
+    text-align: center;
+    border-bottom: 1px solid #D7D7D7;
+    font: 14px/34px 'SimSun';
+    font-weight: bold;
+}
+.left dl{
+    padding:0 0 5px 20px ;
+    border-bottom: 1px dotted #D7D7D7;
+}
+.left dl dt{
+    font: 12px/32px 'SimSun';
+}
+.left dl dd a{
+    display: inline-block;
+    width: 50%;
+    line-height: 24px;
+}
+/*右侧内容*/
+.right{
+    width: 812px;
+}
+/*banner图*/
+.banner {
+    height: 325px;
+    width: 812px;
+    overflow: hidden;
+    position: relative;
+}
+.imgbox{
+    width: 1624px;
+    height: 325px;
+}
+.imgbox ul li{
+    position: relative;
+    float: left;
+}
+.imgbox img{
+    height: 325px;
+    width: 812px;
+    display: block;
+}
+.imgnum{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom: 15px;
+}
+.imgnum a{
+    display: inline-block;
+    width: 20px;
+    height: 5px;
+    margin-right: 5px;
+    background: #fff;
+}
+.imgnum a:hover{
+    background: #FF8C00;
+}
+/*商品列表*/
+.list-box  h3{
+    width: 180px;
+    height: 34px;
+    border-bottom: 2px solid #096DBA;
+    margin-top: 10px;
+    font: 14px/34px 'SimSun';
+    font-weight: bold;
+    text-indent: 10px;
+    color: #454545;
+    position: relative;
+}
+.list-box ul{
+    border-top: 2px solid #CCC;
+    width: 812px;
+    margin-top: -2px;
+}
+.list-box ul li{
+    width: 203px;
+    height: 266px;
+    padding-top: 15px;
+    float: left;
+}
+.list-box ul li p{
+    padding: 0 22px;
+}.list-box ul li p a:hover{
+     text-decoration: underline;
+ }
+.description{
+    line-height: 18px;
+}
+.description a{
+    color: #333;
+}
+.price{
+    margin-top: 8px;
+    font: 14px/20px 'microsoft yahei';
+    color: #D4105A;
+}
+.comment{
+    line-height: 14px;
+}
+.comment span{
+    width: 75px;
+    height: 15px;
+    background: url(../images/icon/icon_star.jpg);
+    display: inline-block;
+}
+.comment a{
+    color: #085C9B;
+}
+

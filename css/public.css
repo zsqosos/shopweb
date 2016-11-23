@@ -51,6 +51,10 @@ a{
     background: #F7F7F7;
     line-height: 31px;
 }
+.top-bar .container{
+    height: 31px;
+    background: #F7F7F7;
+}
 .top-bar .container .fl a{
     background: url(../images/icon/icon_star.jpg) left center no-repeat;
     padding-left: 19px;
@@ -64,6 +68,10 @@ a{
     height: 85px;
     background: #1D7AD9;
     color: #fff;
+}
+.search-bar .container{
+    height: 85px;
+    background: #1D7AD9;
 }
 .logo{
     padding: 13px 0 0 39px;
@@ -124,6 +132,10 @@ a{
     text-align: center;
     color: #fff;
 }
+.nav .container{
+    height: 35px;
+    background: #1369C0;
+}
 .shopclass{
     width: 188px;
 }
@@ -153,9 +165,13 @@ a{
 footer{
     margin-top: 40px;
     height: 223px;
-    padding-top: 46px;
     background: #D4D4D4;
     text-align: center;;
+}
+footer .container{
+    height: 183px;
+    padding-top: 40px;
+    background: #D4D4D4;
 }
 footer p{
     line-height: 24px;

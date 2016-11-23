@@ -123,11 +123,9 @@
 }
 .imgnum{
     width: 100%;
-    height: 5px;
     position: absolute;
     text-align: center;
     bottom: 15px;
-    left: 0;
 }
 .imgnum a{
     display: inline-block;
