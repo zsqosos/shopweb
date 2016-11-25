@@ -13,8 +13,9 @@ body{
 .bnav a:hover{
     text-decoration: underline;
 }
+/*上部商品购买区左侧图片*/
 .top{
-    width: 100%;
+    width: 998px;
     height: 590px;
     margin-top: 12px;
     border: 1px solid #CCCCCC;
@@ -26,7 +27,7 @@ body{
     border-right: 1px solid #CCCCCC;
 }
 .goods-img .bg-img-box{
-    padding: 17px 0 36px;
+    padding: 40px 0 36px;
     text-align: center;
 }
 .goods-img ul{
@@ -41,5 +42,256 @@ body{
     float: left;
 }
 .li-active{
-    border: 1px solid #317EE7;
+    border: 1px solid #317EE7!important;
 }
+/*商品购买区右侧选择*/
+.shop-info{
+    width: 618px;
+    padding: 40px 35px 0;
+    color: #666;
+}
+.shop-info h3{
+    margin: 0 0 16px 16px;
+    font: 16px/20px 'microsoft yahei';
+    color: #333333;
+}
+.shop-info dl{
+    line-height: 48px;
+    clear: both;
+    overflow: hidden;
+}
+.shop-info dl dt{
+    width: 60px;
+    margin-left: 16px;
+    float: left;
+}
+.shop-info dl dd{
+    margin-right: 15px;
+    float: left;
+}
+.price span{
+    font: 22px/22px 'microsoft yahei';
+    color: #D70000;
+}
+.discount span{
+    height: 18px;
+    padding: 3px 3px 3px 13px;
+    margin-right: 10px;
+    background: url(../images/icon/discount.png) left center no-repeat;
+    color: #fff;
+}
+.shop-info dl dd select{
+    padding: 2px;
+    border: 1px solid #BFBFBF;
+    color: #666;
+    background: #fff;
+}
+.choose-color a{
+    width: 82px;
+    border: 1px solid #CCCCCC;
+    margin-right: 10px;
+    display: inline-block;
+    line-height: 32px;
+    text-align: center;
+    background: #fff;
+}
+.choose-type{
+    width: 525px;
+}
+.choose-type a{
+    padding: 0 10px;
+    border: 1px solid #CCCCCC;
+    margin-right: 10px;
+    line-height: 24px;
+    display: inline-block;
+    background: #fff;
+}
+.a-active{
+    border: 1px solid #317EE7!important;
+}
+.num span{
+    display: inline-block;
+    height: 32px;
+    width: 15px;
+    border: 1px solid #B2B2B2;
+    line-height: 32px;
+    text-align: center;
+    background: #fff;
+}
+.num input{
+    height: 32px;
+    width: 20px;
+    padding: 0 15px;
+    border-top: 1px solid #B2B2B2;
+    border-bottom: 1px solid #B2B2B2;
+}
+.limit{
+    font-size: 14px;
+}
+.limit span{
+    color: #FC7700;
+    font-weight: bold;
+}
+.bg{
+    background: #F2F2F2;
+}
+.price-info{
+    line-height: 33px!important;
+}
+.chose{
+    margin: 25px 0 25px 16px;
+    font-weight: bold;
+}
+.chose span{
+    padding: 0 5px;
+    color: #0479CA;
+}
+.button{
+    width: 526px;
+    margin: 12px auto;
+}
+.button a{
+    height: 48px;
+    width: 183px;
+    margin: 0 40px;
+    background: #FC8800;
+    color: #fff;
+    font: 20px/48px 'microsoft yahei';
+    display: inline-block;
+    text-align: center;
+}
+.button a span{
+    width: 23px;
+    margin-right: 15px;
+    line-height: 48px;
+    display: inline-block;
+    background: url(../images/icon/icon_02.png) left center no-repeat;
+}
+.notice{
+    margin: 24px 0 24px 16px;
+    color: #999;
+}
+/*左侧商品推荐*/
+.left{
+    width: 188px;
+    border-top: 2px solid #1D86CF;
+    margin-top: 14px;
+}
+.side{
+    border: 1px solid #CCCCCC;
+}
+.left .side:last-child{
+    margin-top: 10px;
+}
+.side h5{
+    padding-left: 16px;
+    font: 14px/38px 'SimSun';
+    border-bottom: 1px solid #CCCCCC;
+    font-weight: bold;
+    color: #333;
+    background: #F3F3F3;
+}
+.side ul{
+    padding-bottom: 10px;
+    background: #fff;
+}
+.side ul li{
+    padding: 0 16px;
+    line-height: 16px;
+}
+.side .product-info{
+    color: #999;
+}
+.side .product-price{
+    color: #DE0000;
+    font-family: 'microsoft yahei','serif';
+}
+.side-img-box{
+    width: 162px;
+    height: 150px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.side-img-box img{
+    vertical-align: middle;
+}
+/*右侧商品详细介绍*/
+.right{
+    width: 788px;
+    margin-top: 14px;
+}
+.description{
+    background: #fff;
+    border: 1px solid #CCCCCC;
+}
+.com{
+    width: 392px;
+    line-height: 42px;
+    border: 1px solid #CCCCCC;
+    text-align: center;
+    color: #000;
+    display: inline-block;
+    font-size: 14px;
+}
+.des{
+    width: 394px;
+    color: #fff;
+    background: #0479CA;
+    line-height: 44px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+}
+.des span{
+    padding-right: 10px;
+    line-height: 15px;
+    background: url(../images/icon/description.png) left center no-repeat;
+    display: inline-block;
+}
+.com span{
+    padding-right: 10px;
+    line-height: 18px;
+    background: url(../images/icon/comment.gif) left center no-repeat;
+    display: inline-block;
+}.img-box{
+    margin-top: 30px;
+    width: 788px;
+    text-align: center;
+}
+.description h6{
+    width: 72px;
+    padding: 5px 0;
+    margin: 20px 0 0 20px;
+    border-bottom: 2px solid #2457A6;
+    color: #2457A6;
+    font: 16px/26px 'microsoft yahei';
+    font-weight: normal;
+    position: relative;
+} 
+.description p{
+    margin: -2px 20px 0;
+    border-top: 2px solid #D7D7D7;
+    padding-top: 19px;
+    line-height: 20px;
+    color: #666666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
