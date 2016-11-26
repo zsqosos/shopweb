@@ -110,6 +110,7 @@ body{
     border: 1px solid #317EE7!important;
 }
 .num span{
+    margin-top: 7px;
     display: inline-block;
     height: 32px;
     width: 15px;
@@ -117,13 +118,17 @@ body{
     line-height: 32px;
     text-align: center;
     background: #fff;
+    float: left;
 }
 .num input{
+    margin-top: 7px;
     height: 32px;
-    width: 20px;
-    padding: 0 15px;
+    width: 50px;
     border-top: 1px solid #B2B2B2;
     border-bottom: 1px solid #B2B2B2;
+    text-align: center;
+    float: left;
+    line-height: 32px\9;
 }
 .limit{
     font-size: 14px;
@@ -277,19 +282,165 @@ body{
     line-height: 20px;
     color: #666666;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*商品评价*/
+.comment{
+    margin-top: 15px;
+    width: 788px;
+    border: 1px solid #D7D7D7;
+    background: #fff;
+}
+.comment h4{
+    border-bottom: 1px solid #D7D7D7;
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 34px;
+    font-weight: bold;
+    color: #656565;
+    background: #f6f6f6;
+}
+.score-box{
+    margin: 30px 0 22px 55px;
+}
+.score{
+    font-size: 50px;
+    color: #FF8F00;
+    font-family: 'microsoft yahei',serif;
+}
+.score i{
+    font-size: 18px;
+    font-style: normal;
+    color: #65657D;
+}
+.score-bar{
+    margin-left: 20px;
+    position: relative;
+}
+.score-bar ul{
+    margin: 13px 0;
+    color: #fff;
+    background: #BDBDBD;
+}
+.score-bar ul li{
+    padding: 0 30px;
+    float: left;
+    line-height: 18px;
+}
+.score-bar p{
+    color: #66667D;
+}
+.score-icon{
+    width: 25px;
+    height: 14px;
+    color: #fff;
+    background: #7F7F7F;
+    font-family: 'microsoft yahei', 'serif';
+    position: absolute;
+    left: 90%;
+    top: -9px;
+    text-align: center;
+}
+.score-icon::after{
+    content: "";
+    width: 0;
+    height: 0;
+    border: 4px solid;
+    border-color: #7F7F7F transparent transparent transparent;
+    display: block;
+    position: absolute;
+    top: 14px;
+    left: 8px;
+}
+.tab-box{
+    margin-bottom: 35px;
+    height: 32px;
+    background: #F9F9F9;
+}
+.tab-box ul{
+    margin-left: 20px;
+}
+.tab-box ul li{
+    margin: 0 18px;
+    line-height: 32px;
+    float: left;
+}
+.tab-box ul li a{
+    padding: 0 3px;
+    height: 29px;
+    color: #000;
+    display: inline-block;
+}
+.tab-active{
+    border-bottom: 3px solid #317EE7;
+    color: #317EE7!important;
+    font-weight: bold;
+}
+.sort{
+    margin-right: 15px;
+}
+.sort a{
+    width: 72px;
+    height: 18px;
+    padding: 3px 18px 3px 5px;
+    border: 1px solid #CDCDCD;
+    margin: 0 3px;
+    line-height: 32px;
+    background: url(../images/icon/tab.png)66px center no-repeat;
+}
+.content-box{
+    margin: 20px 0;
+}
+.user{
+    width: 150px;
+    height: 100px;
+    text-align: center;
+}
+.content{
+    width: 615px;
+    color: #777777;
+    line-height: 20px;
+}
+.star-score span{
+    margin-right: 5px;
+    width: 65px;
+    background: url(../images/icon/icon_star_bgw.gif) left center;
+    display: inline-block;
+    line-height: 12px;
+}
+.comment-text{
+    margin: 10px 30px 10px 10px;
+    line-height: 16px;
+}
+.content a{
+    color: #085C9B;
+}
+/*页码部分*/
+.page-box{
+    padding: 20px 0;
+    margin-right: 20px;
+    color: #999;
+}
+.page-box a{
+    padding: 0 13px;
+    border: 1px solid #C9C9C9;
+    margin: 0 3px;
+    display: inline-block;
+    line-height: 26px;
+}
+.page-box input{
+    height: 22px;
+    width: 25px;
+    padding: 0 5px;
+    margin: 0 3px;
+    border: 1px solid #C9C9C9;
+    text-align: center;
+}
+.page-active{
+    color: #fff;
+    background: #2266BB;
+}
+.enter{
+    line-height: 22px!important;
+}
 
 
 
