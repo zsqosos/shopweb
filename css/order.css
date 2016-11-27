@@ -1,0 +1,145 @@
+.step-box{
+    width: 400px;
+    margin: 25px 50px 0 0;
+    color: #F3E402;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    line-height: 16px;
+}
+.text-right{
+    color: #fff;
+    font-weight: normal;
+}
+/*收货地址表单*/
+.form-box{
+    border:  1px solid #CCCCCC;
+    margin-top: 12px;
+    line-height: 34px;
+}
+.form-box h3{
+    border-bottom: 1px solid #CCCCCC;
+    font: 14px/32px 'microsoft yahei';
+    font-weight: normal;
+    background: #F3F3F3;
+    text-indent: 12px;
+}
+.form-box form{
+    margin: 15px 50px;
+}
+.form-box .address label i{
+    margin-right: 10px;
+    font-style: normal;
+    color: #FF0000;
+}
+.form-box .address select{
+    padding: 3px;
+    border: 1px solid #CCCCCC;
+}
+.form-box .address input[type="text"]{
+    padding: 0 5px;
+    height: 22px;
+    width: 110px;
+    border: 1px solid #CCCCCC;
+}
+#address{
+    width: 390px;
+}
+.address .submit{
+    padding: 6px 18px;
+    margin-top: 15px;
+    background: #3E8BF5;
+    color: #fff;
+    cursor: pointer;
+}
+/*付款方式表单*/
+.wechat-icon{
+    padding-right: 18px;
+    line-height: 20px;
+    background: url(../images/icon/wechat.gif) left center no-repeat;
+    display: inline-block;
+}
+.payway input{
+    margin-right: 10px;
+    vertical-align:middle;
+}
+/*发票表单*/
+.invoice{
+    width: 135px;
+}
+/*发货清单*/
+table{
+    width: 100%;
+    text-align: left;
+    color: #666666;
+    border-collapse: collapse;
+}
+table .underline{
+    border-bottom: 1px solid #CCCCCC;
+}
+table tr td{
+    vertical-align: top;
+}
+table .img-cell{
+    width: 90px;
+    padding-left: 30px;
+    border-bottom: 1px solid #CCCCCC;
+}
+table .price-cell{
+    font-size: 14px;
+    font-family: microsoft yahei,serif;
+    color: #D70000;
+}
+.head-cell{
+    text-indent: 20px;
+    padding-left: 30px;
+}
+.remark{
+    margin-left:30px;
+    color: #3377FF;
+}
+.notice{
+    margin-left:30px;
+    color: #EE0000;
+}
+.notice span{
+    padding-right: 10px;
+    background: url(../images/icon/notice.gif) left center no-repeat;
+    display: inline-block;
+}
+.none-shop{
+    margin:0 0 15px 30px;
+    line-height: 18px;
+    color: #666666;
+}
+.none-shop .none-text{
+    margin: 10px 0 0 15px;
+}
+.none-shop .none-text span{
+    color: #D70000;
+}
+/*确定订单*/
+.confirm{
+    margin: 25px 50px;
+    text-align: right;
+    font-family: microsoft yahei, serif;
+}
+.confirm .price{
+    font-size: 14px;
+    color: #929292;
+}
+.confirm .price span{
+    margin-left: 10px;
+    font-size: 24px;
+    color: #EE0000;
+}
+.confirm a{
+    width: 135px;
+    height: 35px;
+    font-size: 18px;
+    font-family: microsoft yahei, serif;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    background: #EE0000;
+}
