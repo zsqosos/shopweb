@@ -1,0 +1,43 @@
+.center-box{
+    height: 31px;
+    width: 470px;
+    margin: 0 auto;
+}
+.center-box .welcome{
+    margin: 35px 0 0 25px;
+    color: #fff;
+    font-size: 22px;
+    font-family: microsoft yahei, serif;
+}
+.login-box{
+    width: 470px;
+    padding: 20px 0;
+    border: 1px solid #CCCCCC;
+    margin: 50px auto;
+}
+.login-box .box{
+    width: 310px;
+    margin: 15px auto;
+    line-height: 30px;
+}
+.login-box input[type="text"]{
+    height: 30px;
+    width: 100%;
+    padding: 0 7px;
+    border: 1px solid #CCCCCC;
+}
+.login-box input[type="checkbox"]{
+    vertical-align: middle;
+}
+.submit{
+    width: 326px;
+    height: 34px;
+    text-align: center;
+    color: #fff;
+    background: #1D7AD9;
+    font-size: 16px;
+    font-family: microsoft yahei, serif;
+}
+.login-box a:hover{
+    text-decoration: underline;
+}
