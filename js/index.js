@@ -3,6 +3,14 @@
  */
 $(function () {
     popMenu();
+    var i = 1;
+    $('#j_btn').click(function(){
+        $('.imgbox').animate({
+            left : -812*i+'px'
+        },1000);
+        i++;
+        if(i==5) i = 0;
+    })
 });
 
 function popMenu (){

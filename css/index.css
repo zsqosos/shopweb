@@ -109,8 +109,9 @@
     overflow: hidden;
 }
 .imgbox{
-    width: 1624px;
+    width: 4060px;
     height: 325px;
+    position: absolute;
 }
 .imgbox ul li{
     position: relative;
