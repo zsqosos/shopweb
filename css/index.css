@@ -51,7 +51,7 @@
     top: 0;
     left: 188px;
     background: #fff;
-    z-index: 1;
+    z-index: 5;
     display: none;
 }
 .show{
@@ -108,35 +108,49 @@
     right: 0;
     overflow: hidden;
 }
-.imgbox{
-    width: 4060px;
-    height: 325px;
+.banner ul li{
     position: absolute;
 }
-.imgbox ul li{
-    position: relative;
-    float: left;
-}
-.imgbox img{
+.banner ul li img{
     height: 325px;
     width: 812px;
     display: block;
+}
+.ban-btn{
+    width: 100%;
+    position: absolute;
+    top: 136px;
+    z-index: 2;
+}
+.ban-btn a{
+    display: inline-block;
+    height: 60px;
+    width: 35px;
+    background: rgba(180,180,180,0.5);
+    font-size: 25px;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+}
+.ban-btn a:hover{
+    background: rgba(100,100,100,0.5);
 }
 .imgnum{
     width: 100%;
     position: absolute;
     text-align: center;
     bottom: 15px;
+    z-index: 2;
 }
 .imgnum a{
     display: inline-block;
     width: 20px;
     height: 5px;
-    margin-right: 5px;
+    margin:0 3px;
     background: #fff;
 }
-.imgnum a:hover{
-    background: #FF8C00;
+.imgnum-active{
+    background: #FF8C00!important;
 }
 /*section商品展示*/
 /*商品分类条*/
