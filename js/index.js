@@ -2,89 +2,13 @@
  * Created by MEMEME on 2016/11/22.
  */
 $(function () {
-    //console.log($.carousel.len('#j_bn'));
-    var now = 0;
-    var hasStarted = false;
-    var liItems =$('#j_bn').find('ul').find('li');
-    var len = liItems.length;
-    //初始化
-    liItems.first('li').css({'opacity':1,'z-index':1}).siblings('li').css({'opacity':0,'z-index':0});
-    var aDom = '';
-    for(var i=0; i<len; i++){
-        aDom += '<a></a>';
-    }
-    $(aDom).appendTo($('.banner .imgnum'));
-    $('.imgnum').find('a:first').addClass("imgnum-active");
-    $('.ban-btn').hide();
-
-    $('#j_bn').hover(function(){
-        mystop();
-        $('.ban-btn').fadeIn(200);
-    },function(){
-        mystart();
-        $('.ban-btn').fadeOut(200);
-    });
-
-
-    $('.imgnum').find('a').hover(function(){
-        mystop();
-        var preIndex = $('.imgnum').find('a').filter('.imgnum-active').index();
-        now = $(this).index();
-        play(preIndex,now)
-    },function(){
-        mystart();
-    });
-
-    $('.next-btn').click(function(){
-        mynext();
-    });
-    $('.prev-btn').click(function(){
-        pre();
-    });
-
-    function pre() {
-        var preIndex = now;
-        now = (--now + len) % len;
-        play(preIndex, now);
-    }
-    /**
-     * 向后翻页
-     */
-    function mynext() {
-        var preIndex = now;
-        now = ++now % len;
-        play(preIndex, now);
-    }
-    /**
-     * 从preIndex页翻到currentIndex页
-     * preIndex 整数，翻页的起始页
-     * currentIndex 整数，翻到的那页
-     */
-    function play(preIndex, now) {
-        liItems.eq(preIndex).stop().animate({opacity:0,'z-index':0},500).parent().children().eq(now).stop().animate({opacity:1,'z-index':1},500);
-        $('.imgnum').find('a').removeClass('imgnum-active').eq(now).addClass('imgnum-active');
-    }
-    /**
-     * 开始轮播
-     */
-    function mystart() {
-        if(!hasStarted) {
-            hasStarted = true;
-            interval = setInterval(mynext, 3000);
-        }
-    }
-    /**
-     * 停止轮播
-     */
-    function mystop() {
-        clearInterval(interval);
-        hasStarted = false;
-    }
-//开始轮播
-    mystart();
-
-
-popMenu();
+    var bg = $.extend(true,{},carousel);
+    var sm1 = $.extend(true,{},carousel);
+    var sm2 = $.extend(true,{},carousel);
+    bg.startPlay('#J_bg_ban','#J_bg_indicator','#J_bg_btn');
+    sm1.startPlay('#J_sm_ban1','#J_sm_indicator1');
+    sm2.startPlay('#J_sm_ban2','#J_sm_indicator2');
+    popMenu();
 });
 
 function popMenu (){
@@ -101,80 +25,80 @@ function popMenu (){
     })
 }
 //轮播对象
-$.carousel = {
-    now : 1,
+var carousel = {
+    now : 0,
     hasStarted : false,
     interval : null,
-    len : 5,
-    liItems : function(id){
-        return $(id).find('ul').find('li');
-    },
-    //len : function(id){
-    //    return $(id).find('ul').find('li').length;
-    //}
-    start : function(bannerId,aBoxClass,btnBoxClass) {
-        var liItems = $(bannerId).find('ul').find('li');
-        var len = liItems.length;
-        //初始化
-        liItems.first('li').css({'opacity': 1, 'z-index': 1}).siblings('li').css({'opacity': 0, 'z-index': 0});
+    liItems : null,
+    len : 0,
+    aBox : null,
+    bBox : null,
+    startPlay : function(bannnerBox,aBox,btnBox) {
+        var that = this;
+        this.liItems = $(bannnerBox).find('ul').find('li');
+        this.len = this.liItems.length;
+        this.liItems.first('li').css({'opacity': 1, 'z-index': 1}).siblings('li').css({'opacity': 0, 'z-index': 0});
         var aDom = '';
-        for (var i = 0; i < len; i++) {
+        for (var i = 0; i < this.len; i++){
             aDom += '<a></a>';
         }
-        var aBox = $(bannerId).find(aBoxClass);
-        $(aDom).appendTo(aBox);
-        aBox.find('a:first').addClass("imgnum-active");
-        aBox.hide();
+        this.aBox = $(bannnerBox).find(aBox);
+        this.bBox = $(bannnerBox).find(btnBox);
+        $(aDom).appendTo(this.aBox);
+        this.aBox.find('a:first').addClass("imgnum-active");
+        this.bBox.hide();
 
-        $(bannerId).hover(function () {
-            this.mystop();
-            aBox.fadeIn(200);
-        }, function () {
-            this.mystart();
-            aBox.fadeOut(200);
+        $(bannnerBox).hover(function (){
+            that.stop();
+            that.bBox.fadeIn(200);
+        }, function (){
+            that.start();
+            that.bBox.fadeOut(200);
+        });
+        this.aBox.find('a').hover(function (){
+            that.stop();
+            var out = that.aBox.find('a').filter('.imgnum-active').index();
+            that.now = $(this).index();
+            if(out!=that.now) {
+                that.play(out, that.now)
+            }
+        }, function (){
+            that.start();
         });
 
+        $(btnBox).find('a:first').click(function(){that.next()});
+        $(btnBox).find('a:last').click(function(){that.prev()});
 
-        aBox.find('a').hover(function () {
-            this.mystop();
-            var preIndex = aBox.find('a').filter('.imgnum-active').index();
-            this.now = $(this).index();
-            this.play(preIndex, this.now)
-        }, function () {
-            this.mystart();
-        });
-
-        $(btnBoxClass).find('a:last-child').click(this.mynext());
-        $(btnBoxClass).find('a:first-child').click(this.pre());
+        this.start()
     },
-    pre : function (){
-        var preIndex = this.now;
+    prev : function (){
+        var out = this.now;
         this.now = (--this.now + this.len) % this.len;
-        this.play(preIndex, this.now);
+        this.play(out, this.now);
     },
 
-    mynext : function (){
-        var preIndex = this.now;
+    next : function (){
+        var out = this.now;
         this.now = ++this.now % this.len;
-        this.play(preIndex, this.now);
+        this.play(out, this.now);
     },
 
-    play : function (preIndex, now){
-        this.liItems('#j_bn').eq(preIndex).stop().animate({opacity:0,'z-index':0},500).parent().children().eq(now).stop().animate({opacity:1,'z-index':1},500);
-        $('.imgnum').find('a').removeClass('imgnum-active').eq(now).addClass('imgnum-active');
+    play : function (out, now){
+        this.liItems.eq(out).stop().animate({opacity:0,'z-index':0},500).end().eq(now).stop().animate({opacity:1,'z-index':1},500);
+        this.aBox.find('a').removeClass('imgnum-active').eq(now).addClass('imgnum-active');
     },
-    mystart : function() {
+    start : function(){
         if(!this.hasStarted) {
             this.hasStarted = true;
-            this.interval = setInterval(mynext, 3000);
+            var that = this;
+            this.interval = setInterval(function(){
+                that.next();
+            },2000);
         }
     },
-    mystop : function (){
+    stop : function (){
         clearInterval(this.interval);
         this.hasStarted = false;
-    },
-    //开始轮播
-    startplay : this.mystart()
-
+    }
 };
 

@@ -179,12 +179,9 @@
     overflow: hidden;
     position: relative;
 }
-.banner-sm .imgbox-sm{
-    width: 570px;
-    height: 400px;
-}
-.banner-sm .imgbox-sm ul li{
-    float: left;
+.banner-sm ul li{
+    position: absolute;
+    top: 0;
 }
 .banner-sm img{
     width: 190px;
