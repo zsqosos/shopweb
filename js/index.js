@@ -2,9 +2,12 @@
  * Created by MEMEME on 2016/11/22.
  */
 $(function () {
-    var bg = $.extend(true,{},carousel);
-    var sm1 = $.extend(true,{},carousel);
-    var sm2 = $.extend(true,{},carousel);
+    //var bg = $.extend(true,{},carousel);
+    //var sm1 = $.extend(true,{},carousel);
+    //var sm2 = $.extend(true,{},carousel);
+    var bg = new Carousel();
+    var sm1 = new Carousel();
+    var sm2 = new Carousel();
     bg.startPlay('#J_bg_ban','#J_bg_indicator','#J_bg_btn');
     sm1.startPlay('#J_sm_ban1','#J_sm_indicator1');
     sm2.startPlay('#J_sm_ban2','#J_sm_indicator2');
@@ -25,14 +28,14 @@ function popMenu (){
     })
 }
 //轮播对象
-var carousel = {
-    now : 0,                    //当前显示的图片索引
-    hasStarted : false,         //是否开始轮播
-    interval : null,            //定时器
-    liItems : null,             //要轮播的li元素集合
-    len : 0,                    //liItems的长度
-    aBox : null,                //包含指示器的dom对象
-    bBox : null,                //包含前后按钮的dom对象
+function Carousel(){
+    this.now = 0;                    //当前显示的图片索引
+    this.hasStarted= false;         //是否开始轮播
+    this.interval = null;            //定时器
+    this.liItems = null;             //要轮播的li元素集合
+    this.len = 0;                    //liItems的长度
+    this.aBox = null;                //包含指示器的dom对象
+    this.bBox = null;                //包含前后按钮的dom对象
 
     /**
      * 初始化及控制函数
@@ -40,7 +43,7 @@ var carousel = {
      * @param aBox  string 包含指示器的盒子的id或class
      * @param btnBox string 包含前后按钮的盒子的id或class
      */
-    startPlay : function(bannnerBox,aBox,btnBox) {
+    this.startPlay = function(bannnerBox,aBox,btnBox) {
         //初始化对象参数
         var that = this;
         this.liItems = $(bannnerBox).find('ul').find('li');
@@ -70,7 +73,7 @@ var carousel = {
             var out = that.aBox.find('a').filter('.imgnum-active').index();
             that.now = $(this).index();
             if(out!=that.now) {
-                that.play(out, that.now)
+                that.play(out,that.now)
             }
         }, function (){
             that.start();
@@ -80,30 +83,30 @@ var carousel = {
         $(btnBox).find('a:last').click(function(){that.prev()});
         //开始轮播
         this.start()
-    },
+    };
     //前一张函数
-    prev : function (){
+    this.prev = function (){
         var out = this.now;
         this.now = (--this.now + this.len) % this.len;
-        this.play(out, this.now);
-    },
+        this.play(out,this.now);
+    };
     //后一张函数
-    next : function (){
+    this.next = function (){
         var out = this.now;
         this.now = ++this.now % this.len;
-        this.play(out, this.now);
-    },
+        this.play(out,this.now);
+    };
     /**
      * 播放函数
      * @param out number 要消失的图片的索引值
      * @param now number 接下来要轮播的图的索引值
      */
-    play : function (out, now){
+    this.play = function (out,now){
         this.liItems.eq(out).stop().animate({opacity:0,'z-index':0},500).end().eq(now).stop().animate({opacity:1,'z-index':1},500);
         this.aBox.find('a').removeClass('imgnum-active').eq(now).addClass('imgnum-active');
     },
     //开始函数
-    start : function(){
+    this.start = function(){
         if(!this.hasStarted) {
             this.hasStarted = true;
             var that = this;
@@ -111,9 +114,9 @@ var carousel = {
                 that.next();
             },2000);
         }
-    },
+    };
     //停止函数
-    stop : function (){
+    this.stop = function (){
         clearInterval(this.interval);
         this.hasStarted = false;
     }
